@@ -161,7 +161,7 @@ const mainRef = useRef<HTMLElement>(null);
         {/* Replace src with your preferred Abstract Tech image */}
         <div className="parallax-bg w-full h-[120%] relative">
              <Image 
-                src="/assets/background.jpg"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/background.jpg`}
                 alt="Tech Background"
                 fill
                 className="object-cover"
@@ -208,7 +208,7 @@ const mainRef = useRef<HTMLElement>(null);
              {/*  - Placeholder for profile */}
              <div className="relative w-full h-96 rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
                 <Image 
-                    src="/assets/profile.jpg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/profile.jpg`}
                     alt="Profile"
                     fill
                     className="object-cover"
