@@ -36,30 +36,18 @@ const SKILLS = [
 const PROJECTS: Record<"android" | "java", Project[]> = {
   android: [
     {
-      title: "E-Commerce App",
-      desc: "Native Android app with MVVM architecture, Retrofit, and Room DB.",
-      tags: ["Kotlin", "Jetpack Compose", "Retrofit"],
-      links: { live: "#", github: "#", demo: "#" },
-    },
-    {
-      title: "Fitness Tracker",
-      desc: "Real-time step tracking using sensor API and Google Maps integration.",
-      tags: ["Java", "Google Maps API", "Firebase"],
-      links: { live: "#", github: "#", demo: "#" },
+      title: "Mysa Money",
+      desc: "Developed an app featuring expense/income tracking and dynamic visualizations for financial insights. Integrated Gemini AI to create a personalized Financial Coach, utilizing RAG to provide spending advice and implemented ML Kit for receipt scanning. Engineered a Freemium monetization strategy, implementing Google Play Billing for in-app purchases, AdMob for banner/rewarded ads, and secure Google Drive cloud backup using OAuth 2.0 and the Drive API.",
+      tags: ["Kotlin", "Jetpack Compose", "Material 3 UI", "Gemini AI", "Google Play Billing", "Play Console"],
+      links: { live: "https://play.google.com/store/apps/details?id=com.giantnovadevs.mysamoney", github: "https://github.com/giant-nova/Mysa-Money.git", demo: "#" },
     },
   ],
   java: [
     {
-      title: "Inventory System",
-      desc: "Core Java desktop application with Swing and JDBC connectivity.",
-      tags: ["Java SE", "Swing", "MySQL"],
-      links: { live: "#", github: "#", demo: "#" },
-    },
-    {
-      title: "Bank Management CLI",
-      desc: "Complex algorithm practice handling transactions and threads.",
-      tags: ["Java", "Multi-threading", "File I/O"],
-      links: { live: "#", github: "#", demo: "#" },
+      title: "Retail Inventory & GST Billing System (Windows Desktop App)",
+      desc: "Engineered a RESTful backend using Spring Boot and Hibernate to enforce integrity across inventory updates, stock validation, and billing operations. Designed an interactive, responsive desktop interface using JavaFX and FXML, implementing API integration to ensure a seamless, non-blocking user experience. Created a Jasper Report template to generate a standard bill, ready to print and serve to the customer. Orchestrated the application release using the jpackage tool to bundle the code and runtime into a standalone native Windows installer (.exe) for easy distribution.",
+      tags: ["Java", "Spring Boot", "JavaFX", "JPackage", "Jasper Reports", "Maven", "SQLite database"],
+      links: { live: "#", github: "https://github.com/giant-nova/java-desktop.git", demo: "#" },
     },
   ],
 };
@@ -187,8 +175,7 @@ const mainRef = useRef<HTMLElement>(null);
         {/* Step 3: Hero Content */}
         <div className="hero-content opacity-0 translate-y-20 mt-8 flex flex-col items-center gap-6">
           <p className="max-w-xl text-gray-400 text-lg">
-            Specializing in building robust <strong>Android Applications</strong> and scalable <strong>Java Systems</strong>. 
-            Merging clean code with intuitive user experiences.
+            I specialize in the Java ecosystem (Spring Boot & JavaFX) and am passionate about Native Android App development in Kotlin.
           </p>
           <button className="px-8 py-3 rounded-full bg-cyan-600 hover:bg-cyan-500 text-white font-semibold transition-all shadow-[0_0_15px_rgba(8,145,178,0.5)] hover:shadow-[0_0_25px_rgba(8,145,178,0.8)]">
             Get In Touch
@@ -218,9 +205,7 @@ const mainRef = useRef<HTMLElement>(null);
           <div className="w-full md:w-1/2 space-y-6">
             <h2 className="text-4xl font-bold border-l-4 border-cyan-500 pl-4">About Me</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I am a passionate software engineer with 1 year of professional experience in the tech industry. 
-              My journey began with Core Java, mastering the fundamentals of OOPs and Data Structures, before 
-              transitioning into the dynamic world of Android Development.
+              I graduated in 2025 and currently work at a SaaS startup in Mohali. I specialize in the Java ecosystem (Spring Boot & JavaFX) and am passionate about Android development in Kotlin. My strong IT foundation enables me to rapidly master new technologies.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
               I believe in writing code that is not only functional but also maintainable and efficient. 
@@ -244,27 +229,38 @@ const mainRef = useRef<HTMLElement>(null);
 
         {/* --- 4. EXPERIENCE --- */}
         <section className="reveal-section">
-          <h2 className="text-4xl font-bold mb-12 border-l-4 border-cyan-500 pl-4">Experience</h2>
+          <h2 className="text-4xl font-bold mb-12 border-l-4 border-cyan-500 pl-4">Work Experience</h2>
           <div className="border-l-2 border-gray-800 ml-4 space-y-12">
             
             <div className="relative pl-8">
               <span className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-cyan-500 shadow-[0_0_10px_#06b6d4]"></span>
-              <h3 className="text-2xl font-bold text-white">Junior Software Engineer</h3>
-              <p className="text-cyan-400 font-mono mb-2">Tech Solutions Inc. | 2024 - Present</p>
+              <h3 className="text-2xl font-bold text-white">SDE-1</h3>
+              <p className="text-cyan-400 font-mono mb-2">Acont AI | July 2025 - present</p>
               <ul className="list-disc list-inside text-gray-400 space-y-2">
-                <li>Developed and maintained 3 Android applications used by over 10k users.</li>
-                <li>Migrated legacy Java codebases to Kotlin, improving crash-free rate by 15%.</li>
-                <li>Collaborated with backend teams to integrate RESTful APIs using Retrofit.</li>
+                <li>Developing a robust backend with an intuitive UI.</li>
+                <li>Integrated Python backend services with the PHP backend.</li>
+                <li>Configured Celery workers and Nginx on AWS EC2 to enable efficient PHP-backend communication.</li>
               </ul>
             </div>
 
             <div className="relative pl-8">
               <span className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-gray-600"></span>
-              <h3 className="text-2xl font-bold text-white">Android Intern</h3>
-              <p className="text-cyan-400 font-mono mb-2">Startup Hub | 2023 - 2024</p>
+              <h3 className="text-2xl font-bold text-white">SDE Intern</h3>
+              <p className="text-cyan-400 font-mono mb-2">Acont AI | April 2025 - June 2025</p>
               <ul className="list-disc list-inside text-gray-400 space-y-2">
-                <li>Assisted in designing UI components using XML and Material Design.</li>
-                <li>Implemented local data storage using SQLite and Room Database.</li>
+                <li>Developed APIs using the PHP Laravel framework.</li>
+                <li>Integrated Python backend services with the PHP backend.</li>
+                <li>Configured Celery workers and Nginx on AWS EC2 to enable efficient PHP-backend communication.</li>
+              </ul>
+            </div>
+
+            <div className="relative pl-8">
+              <span className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-gray-600"></span>
+              <h3 className="text-2xl font-bold text-white">Backend Developer Intern</h3>
+              <p className="text-cyan-400 font-mono mb-2">InnovateLogic Company Pvt. Ltd. | January 2025 - March 2025</p>
+              <ul className="list-disc list-inside text-gray-400 space-y-2">
+                <li>Performed PostgreSQL query optimization.</li>
+                <li>Optimized the Excel generation feature for a database containing over one million records.</li>
               </ul>
             </div>
 
@@ -304,13 +300,12 @@ const mainRef = useRef<HTMLElement>(null);
 
       {/* --- 6. FOOTER --- */}
       <footer className="relative z-10 bg-gray-900 border-t border-gray-800 py-12 text-center">
-        <h2 className="text-3xl font-bold text-white mb-6">Let's Build Something Amazing</h2>
+        <h2 className="text-3xl font-bold text-white mb-6">Let's Build Something Great</h2>
         <p className="text-gray-400 mb-8">Open for opportunities in Android & Java Development</p>
         <div className="flex justify-center gap-6 mb-8 text-2xl">
-           <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors"><FaGithub /></a>
-           <a href="mailto:email@example.com" className="text-gray-400 hover:text-cyan-400 transition-colors"><FaExternalLinkAlt /></a>
+           <a href="https://github.com/giant-nova" className="text-gray-400 hover:text-cyan-400 transition-colors"><FaGithub /></a>
+           <a href="mailto:kunal.datadev.os@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors"><FaExternalLinkAlt /></a>
         </div>
-        <p className="text-gray-600 text-sm">© {new Date().getFullYear()} Alex Dev. Built with Next.js & GSAP.</p>
       </footer>
 
     </main>
