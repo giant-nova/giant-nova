@@ -58,7 +58,9 @@
         <img src="https://img.shields.io/badge/Google_Play-Live_App-34A853?style=for-the-badge&logo=googleplay&logoColor=white" alt="Live on Google Play"/>
       </a>
       <br/><br/>
-      <img src="https://img.icons8.com/color/144/tic-tac-toe.png" width="80" alt="XO Rush Icon" />
+      <a href="https://play.google.com/store/apps/details?id=com.giantnovadevs.tictactoe">
+        <img src="assets/icons/xo_rush.png" width="90" style="border-radius: 20px;" alt="XO Rush Icon" />
+      </a>
       <br/><br/>
       <b>100% Jetpack Compose • Firebase Real-Time • Minimax AI</b>
       <br/><br/>
@@ -80,7 +82,9 @@
         <img src="https://img.shields.io/badge/Google_Play-Live_App-34A853?style=for-the-badge&logo=googleplay&logoColor=white" alt="Live on Google Play"/>
       </a>
       <br/><br/>
-      <img src="https://img.icons8.com/color/144/budget.png" width="80" alt="Mysa Money Icon" />
+      <a href="https://play.google.com/store/apps/details?id=com.giantnovadevs.mysamoney">
+        <img src="assets/icons/mysa_money.png" width="90" style="border-radius: 20px;" alt="Mysa Money Icon" />
+      </a>
       <br/><br/>
       <b>Offline-First MVVM • Gemini AI Coach • ML Kit OCR</b>
       <br/><br/>
